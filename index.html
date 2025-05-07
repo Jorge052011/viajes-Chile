@@ -11,31 +11,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--Asociado a CSS-->
     <link rel="stylesheet" href="assets/css/estilos.css">
+      <!--cdn font awesom-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      
     
 
 </head>
 <body>
     <main>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" >
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" >
             <div class="container-fluid mx-5" >
-              <a class="navbar-brand " style="color: white;" href="#" >
+              <a class="navbar-brand "  href="#" >
                 <img src="assets/img/viajes.svg" alt="" width="30" height="24" > Viajes Chile</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <button class="navbar-toggler" style="border-color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon " ></span>
               </button>
               <div class="collapse navbar-collapse "  id="navbarScroll" >
                 <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 150px; ">
                   <li class="nav-item">
-                    <a class="nav-link"  href="#">INICIO</a>
+                    <a class="nav-link"  href="#carouselExample">INICIO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Quienes Somos</a>
+                    <a class="nav-link" href="#Quienes">Quienes Somos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Destacados</a>
+                    <a class="nav-link" href="#Destacados">Destacados</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#Contacto">Contacto</a>
                   </li>               
                   
                 </ul>
@@ -69,10 +72,10 @@
 
         </header>
     </main>
-    <section class="bg-dark">
+    <section class="bg-dark" >
         <div class="container " >
           
-            <h2 class="articulo p-4" style="text-align: center;color: white;">¿Quienes Somos?</h2>
+            <h2 class="articulo p-4" style="text-align: center;color: white;" id="Quienes">¿Quienes Somos?</h2>
             <hr style="color: white;">
           
             <div class="row row-cols-1 row-cols-md-3 g-4 ">
@@ -109,16 +112,16 @@
                 </div>
               </div>
             </div>
-        <h2 class="p-4" style="text-align: center;color: white;">Destacados</h2>
+        <h2 class="p-4" style="text-align: center;color: white;" id="Destacados">Destacados</h2>
         
         <div class="container">
           <hr style="color: white;">
-        <div class="row row-cols-1 row-cols-md-4 g-4 ">
+        <div class="row row-cols-1 row-cols-md-4 g-4" >
             <div class="col">
               <div class="card h-100">
                 <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
                 <div class="card-body " id="bg">
-                  <h5 class="card-title">Card title</h5>
+                  <h4 class="card-title">Zonas cordilleranas</h4>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
                 
@@ -128,7 +131,7 @@
               <div class="card h-100">
                 <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
                 <div class="card-body" id="bg">
-                  <h5 class="card-title">Card title</h5>
+                  <h4 class="card-title">Lagos en altura</h4>
                   <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 
@@ -138,7 +141,7 @@
               <div class="card h-100">
                 <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
                 <div class="card-body" id="bg">
-                  <h5 class="card-title">Card title</h5>
+                  <h4 class="card-title">Rios en desiertos</h4>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 </div>
                 
@@ -148,7 +151,7 @@
                 <div class="card h-100">
                   <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
                   <div class="card-body" id="bg">
-                    <h5 class="card-title">Card title</h5>
+                    <h4 class="card-title">Selva Valdiviada</h4>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                   </div>
                   
@@ -156,9 +159,9 @@
               </div>
         </div>
     </div>
-    <h2 class="p-4" style="color: white;text-align: center;">CONTACTO</h2>
+    <h2 class="p-4" style="color: white;text-align: center;" id="Contacto" >CONTACTO</h2>
     <hr style="color: white;">
-    <div class="formulario p-5" style="color: white;">
+    <div class="formulario p-5" style="color: white;" >
       <div class="mb-3 ">
         <label for="formGroupExampleInput" class="form-label">Nombre</label>
         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
@@ -185,11 +188,11 @@
         
         <h2 style="margin: 40px;;">VIAJES CHILE</h2>
     
-        <div style="display: flex; gap: 10px; margin-right: 40px;">
-          <a href="#"><img src="img/facebook.png" alt="facebook" width="30"></a>
-          <a href="#"><img src="img/youtube.png" alt="youtube" width="30"></a>
-          <a href="#"><img src="img/linkedin.png" alt="linkedin" width="30"></a>
-          <a href="#"><img src="img/instagram.png" alt="instagram" width="30"><i class="fa-brands fa-square-facebook"></i></a>
+        <div style="display: flex; gap: 15px; margin-right: 40px; font-size: 30px;">
+          <a href="https://www.facebook.com/" style="color: white;"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.youtube.com/" style="color: white;"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/" style="color: white;"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/" style="color: white;"><i class="fab fa-instagram"></i></a>
         </div>
     
       </div>
