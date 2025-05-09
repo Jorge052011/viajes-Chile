@@ -22,10 +22,10 @@
 </head>
 <body>
     <main>
-      <!--Implementamos el nav de bootstrap con la misión de dejarlo tranparente y fijo-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" >
+      <!--Implementamos el nav de bootstrap con la misión de dejarlo tranparente pero después se deja de color #2ea8aa en CSS para no perder vision del navbar al bajar ya que se deja fijo-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-none fixed-top" >
             <div class="container-fluid mx-5" >
-              <a class="navbar-brand "  href="#Contacto" >
+              <a class="navbar-brand fw-bold"  href="#Contacto" >
                 <img src="assets/img/viajes.svg" alt="" width="30" height="24" > Viajes Chile</a>
               <button class="navbar-toggler" style="border-color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon " ></span>
@@ -33,7 +33,7 @@
               <div class="collapse navbar-collapse "  id="navbarScroll" >
                 <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 150px; ">
                   <li class="nav-item">
-                    <a class="nav-link"  href="#carouselExample">INICIO</a>
+                    <a class="nav-link fw-bold"  href="#carouselExample">INICIO</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#Quienes">Quienes Somos</a>
@@ -51,7 +51,7 @@
             </div>
         </nav>
         <header>
-          <!--se coloca carrusel para las imagenes con bootstrap-->
+          <!--se coloca carrusel para las imagenes con bootstrap con integracion de botones para los slides-->
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -78,7 +78,7 @@
         </header>
     </main>
     <section class="bg-dark" >
-        <!--Escondemos la seccion o div Quienes somos en md bajo 768 px se esconderá?-->
+        <!--Escondemos la seccion o div "Quienes somos" en md bajo 768 px se esconderá-->
         <div class="container d-none d-md-block " > 
           
             <h2 class="articulo p-4 fw-bold" style="text-align: center;color: white;" id="Quienes">¿Quienes Somos?</h2>

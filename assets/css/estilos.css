@@ -11,7 +11,10 @@ body {
 .nav-link {
     color: white;
 }
-
+/* se deja el navbar de un color parecido al cielo para no perder vision del navbar cuando se baja la paguina, en un principio se dejó transparente con bg-none pero se optó por esta última opción*/
+ .navbar {
+  background-color: #2ea8aa;
+}
 
 /* se unifoma el tamaño de las imagenes de las cartas para que todas queden del mismo tamaño*/
 .card-img-top {
