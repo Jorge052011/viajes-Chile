@@ -13,15 +13,19 @@
     <link rel="stylesheet" href="assets/css/estilos.css">
       <!--cdn font awesom-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <!--Nuestro script-->
+      <script src="assets/js/main.js" defer></script>
+
       
     
 
 </head>
 <body>
     <main>
+      <!--Implementamos el nav de bootstrap con la misión de dejarlo tranparente y fijo-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" >
             <div class="container-fluid mx-5" >
-              <a class="navbar-brand "  href="#" >
+              <a class="navbar-brand "  href="#Contacto" >
                 <img src="assets/img/viajes.svg" alt="" width="30" height="24" > Viajes Chile</a>
               <button class="navbar-toggler" style="border-color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon " ></span>
@@ -47,6 +51,7 @@
             </div>
         </nav>
         <header>
+          <!--se coloca carrusel para las imagenes con bootstrap-->
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -73,12 +78,13 @@
         </header>
     </main>
     <section class="bg-dark" >
-        <div class="container " >
+        <!--Escondemos la seccion o div Quienes somos en md bajo 768 px se esconderá?-->
+        <div class="container d-none d-md-block " > 
           
             <h2 class="articulo p-4" style="text-align: center;color: white;" id="Quienes">¿Quienes Somos?</h2>
             <hr style="color: white;">
           
-            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+          <div class="row row-cols-1 row-cols-md-3 g-4 ">
                 <div class="col">
                   <div class="card h-100 bg-dark" style="color: white;">
                     <i class="fa-solid fa-plane " style="text-align: center;background-color: cyan;font-size: 35px;"></i>
@@ -110,8 +116,11 @@
                     
                   </div>
                 </div>
-              </div>
-            </div>
+          </div>
+        </div>
+
+        <!--se insertan cards para mostar las imagenes destacadas del proyecto con su titulo-->
+
         <h2 class="p-4" style="text-align: center;color: white;" id="Destacados">Destacados</h2>
         
         <div class="container">
@@ -159,40 +168,44 @@
               </div>
         </div>
     </div>
+
+    <!--Colocamos el fomulario de contacto adaptandolo a lo que necesitamos-->
     <h2 class="p-4" style="color: white;text-align: center;" id="Contacto" >CONTACTO</h2>
     <hr style="color: white;">
     <div class="formulario p-5" style="color: white;" >
       <div class="mb-3 ">
         <label for="formGroupExampleInput" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Escriba su Nombre">
       </div>
       <div class="mb-3">
         <label for="formGroupExampleInput2" class="form-label">Asunto</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Acerca de que nos quieres comentar">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Coméntanos acá tus inquietudes "></textarea>
       </div>
       <p class="d-inline-flex gap-1">
-        <button type="submit" class="btn " style="background-color: cyan;color: white;">Enviar</button>
-        
+        <button type="submit" class="btn " style="background-color: cyan;color: white;">Enviar</button>        
       </p>
 
     </div>
     
     </div>
     </section>
+
+    <!--Para finalizar asociamos al footer las paginas sociales del proyecto-->
     <footer style="color: white; background-color: cyan;">
       <div style="display: flex; justify-content: space-between; align-items: center;" class="container-fluid">
         
-        <h2 style="margin: 40px;;">VIAJES CHILE</h2>
-    
-        <div style="display: flex; gap: 15px; margin-right: 40px; font-size: 30px;">
-          <a href="https://www.facebook.com/" style="color: white;"><i class="fab fa-facebook-square"></i></a>
-          <a href="https://www.youtube.com/" style="color: white;"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.linkedin.com/" style="color: white;"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/" style="color: white;"><i class="fab fa-instagram"></i></a>
+        <h2 style="margin: 40px;"  >VIAJES CHILE</h2>
+
+        <!--Hacemos tooltip en las redes sociales llamando a que se unan-->
+        <div style="display: flex; gap: 15px; margin-right: 60px; font-size: 30px;">
+          <a href="https://www.facebook.com/" style="color: white;" ><i class="fab fa-facebook-square" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Unete a Facebook"></i></a>
+          <a href="https://www.youtube.com/" style="color: white;"><i class="fab fa-youtube" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Míranos en Youtube"></i></a>
+          <a href="https://www.linkedin.com/" style="color: white;"><i class="fab fa-linkedin" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Siguenos en linkedin"></i></a>
+          <a href="https://www.instagram.com/" style="color: white;"><i class="fab fa-instagram" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Siguenos en Instagram"></i></a>
         </div>
     
       </div>

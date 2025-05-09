@@ -1,18 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+/* se define el tipo de letra con google fonts para todo el proyecto */
 body {
     font-family: "lato",sans-serif;
 }
 
 
-
+/* definicion de colores del nav */
 .nav-link {
     color: white;
 }
 
 
-
+/* se unifoma el tamaño de las imagenes de las cartas para que todas queden del mismo tamaño*/
 .card-img-top {
     aspect-ratio: 16 / 9; 
     width: 100%;
@@ -20,6 +21,7 @@ body {
     display: block;
   }
 
+  /* se define fondo y olor de texto en cartas */
   #bg {
     background-color: cyan;
     color: white;
